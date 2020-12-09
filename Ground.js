@@ -6,12 +6,12 @@ class Ground {
       this.body = Bodies.rectangle(x,y,width,height,options);
       this.width = width;
       this.height = height;
-      this.img=loadImage("sprites/ground.png");
       World.add(world, this.body);
     }
     display(){
       var pos =this.body.position;
-      imageMode(CENTER);
-      image(this.img, pos.x, pos.y, this.width, this.height);
+      rectMode(CENTER);
+      fill("blue");
+      rect(pos.x, pos.y, this.width, this.height);
     }
   };
