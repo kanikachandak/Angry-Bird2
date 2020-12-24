@@ -13,7 +13,7 @@ class Slingshot
         this.sling1=loadImage("sprites/sling1.png");
         this.sling2=loadImage("sprites/sling2.png");
         this.sling3=loadImage("sprites/sling3.png");
-         World.add(world, this.slingshot);
+        World.add(world, this.slingshot);
     }
     fly()
     {
